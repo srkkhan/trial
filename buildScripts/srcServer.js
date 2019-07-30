@@ -4,7 +4,7 @@ var express=require("express");
 var path=require("path");
 var open=require("open");
 */
-
+/* eslint-diable no-console */
 //ES6 code
 import express from "express";
 import path from "path";
@@ -27,7 +27,7 @@ app.get('/',function(req,res){
 
 app.listen(port,function(err){
     if(err){
-        console.log(err);
+        console.log(err); //eslint-disable-line no-console
     }else{
         open('http://localhost:'+port);
     }
