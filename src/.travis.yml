@@ -1,5 +1,9 @@
+sudo: false
 language: node_js
 node_js:
-  - "10.16.0"
+  - "node"
 install:
-  - npm ci
+  - npm install
+script:
+  - npm run test
+  - npm run lint
